@@ -226,8 +226,8 @@ body{
 .hero-new p{
     color: #1F2E24;
     font-size: 12px;
-    width: fit-content;
     font-family: "DM Sans", sans-serif;
+    width: fit-content;
     
 }
 
@@ -285,10 +285,10 @@ body{
 
 .hero-input button{
     background-color: #2F5D39;
-      border-radius: 999px;
-      color: #FFFFFF;
-      font-size: 13px;
-      border: none;
+    color: #FFFFFF;
+    font-size: 13px;
+    border: none;
+    border-radius: 999px;
       padding: 10px 20px ;
       
 }
