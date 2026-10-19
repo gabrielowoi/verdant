@@ -137,14 +137,27 @@ body{
     background-color: #223929;
     padding:7px;
     gap: 10px;
-    /* overflow: hidden;
-    white-space: nowrap; */
+    overflow: hidden;
+    white-space: nowrap; 
+    width:100%;
 }
 .green-header-text{
     color: #F3EFE2;
     font-size: 13px;
     font-family: "DM Sans", sans-serif;
+    animation: slide 3.5s linear forwards;
   
+}
+
+@keyframes slide {
+   0%{
+    transform: translateX(100vw);
+   }
+
+    100%{
+        transform: translateX(0);
+    }
+
 }
 
 @media(max-width:768px){
@@ -161,6 +174,7 @@ body{
     height: 6px;
     background-color: #F2B705;
     border-radius: 100%;
+    animation: slide 3.4s linear forwards;
 }
 
 /* the hero area*/
@@ -201,7 +215,7 @@ body{
     gap: 8px;
     background-color: #FFFFFF;
     border: 1px solid #E3DECB;
-    width: fit-content;
+    width: fit-content ; 
     padding: 1px 13px 1px 6px;
     border-radius: 999px;
     
