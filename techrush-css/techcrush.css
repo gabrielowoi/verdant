@@ -570,16 +570,24 @@ body{
 
 .top-group .p{
 
-    
+    margin-left: 290px;
     font-size: 12px;
     color: #4A7C59;
    
 }
 
+@media(max-width:1000px){
+    .top-group .p{
+    margin: 0;
+    margin-left: 150px;
+}
+}
+
 .shop-grop{
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 50px;
     align-items: baseline;
     margin-top: 10px;
     flex-wrap: wrap;
@@ -599,25 +607,25 @@ body{
 }
     
 .card-group{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
     margin-top:30px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(6, 162.16px);
     gap: 30px;
     
 } 
 
-@media(max-width:1000px){
+/* @media(max-width:1000px){
     .card-group{
         justify-content: center;
         gap: 20px;
         align-items: center;
     }
-}
+} */
 
 
 .card-1{
-    width: 162.16px;
+    /* width: 162.16px; */
     box-shadow:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 12px;
     padding: 1px;
@@ -627,7 +635,7 @@ body{
 
 .card-1>img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: block;
     margin-bottom: 10px;
 }
@@ -1324,5 +1332,71 @@ body{
 
     .at-foot{
         flex-wrap: wrap;
+    }
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    justify-content: center;
+    gap: 20px;
+    padding:50px 20px; 
+}
+
+
+@media(max-width:1400px){
+    .grid-container{
+        grid-template-columns: repeat(6, 150px);
+        justify-content: center;
+        gap: 40px ;
+
+    }
+
+    .card-1{
+        width: 162.16px;
+    }
+}
+@media(max-width:1150px){
+    .grid-container{
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        gap:20px;
+    }
+}
+@media(max-width:768px){
+    .grid-container{
+        grid-template-columns: repeat(3, 162.16px);
+        gap: 30px;
+    }
+}
+@media(max-width:680px){
+    .grid-container{
+        grid-template-columns: repeat(3, 162.16px);
+    }
+}
+@media(max-width:600px){
+    .grid-container{
+        grid-template-columns: repeat(2, 162.16px);
+        justify-content: space-around;
+        
+    }
+
+    .card-1{
+        width: 162.16px;
+    }
+}
+@media(max-width:450px){
+    .grid-container{
+        grid-template-columns: 100%;
+        justify-content: center;
+        
+    }
+
+    .card-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
