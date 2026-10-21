@@ -1377,7 +1377,27 @@ body{
 }
 @media(max-width:490px){
     .grid-container{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 230px);
+        justify-content: center;
+        
+
+    }
+
+  
+}
+@media(max-width:465px){
+    .grid-container{
+        grid-template-columns: repeat(2, 200px);
+        justify-content: center;
+        
+
+    }
+
+  
+}
+@media(max-width:400px){
+    .grid-container{
+        grid-template-columns: 1fr;
         justify-content: center;
         
 
