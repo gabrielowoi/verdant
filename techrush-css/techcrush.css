@@ -99,6 +99,7 @@ body{
     .logo-container{
         flex-direction: column;
         justify-content: start;
+        gap: 2px;
         width: fit-content;
         position: absolute;
         box-sizing: border-box;
@@ -110,6 +111,8 @@ body{
         box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.1);
         height: 100vh;
         z-index: 100;
+        transform: translateX(100vw);
+        transition: transform 0.3s linear
         
         
     }
