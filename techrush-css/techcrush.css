@@ -20,6 +20,7 @@ body{
     background-color: #FAF7EE;
     padding: 5px 20px;
     position: relative;
+    
 }
 
 .logo-container{
@@ -94,24 +95,24 @@ body{
 }
 
 
-@media(max-width:909px){
+@media(max-width:1000px){
 
     .logo-container{
         flex-direction: column;
         justify-content: start;
         gap: 2px;
-        width: fit-content;
+        max-width: 75%;
         position: absolute;
         box-sizing: border-box;
         background-color: #FAF7EE;
         padding: 20px;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
-        box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.1);
+        
         height: 100vh;
         z-index: 100;
-        transform: translateX(100vw);
+        transform: translateX(100%);
         transition: transform 0.3s linear
         
         
@@ -140,7 +141,8 @@ body{
     .logo-cont{
      display: flex;   
         transform: translateX(0);
-        transition: transform 0.3s linear
+        transition: transform 0.3s linear;
+        box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.1);
     }
 
     .toggle-btn-close{
