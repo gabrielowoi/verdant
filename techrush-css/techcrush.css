@@ -109,7 +109,7 @@ body{
         position: fixed;
         top: 0;
         right: 0;
-        
+        overflow-y: auto;
         height: 100vh;
         z-index: 100;
         transform: translateX(100%);
